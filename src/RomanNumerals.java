@@ -4,6 +4,18 @@ public class RomanNumerals
 	public String toRoman(int number) 
 	{
 		String RomanValue = "";
+		if (number > 49)
+		{
+			RomanValue = RomanValue + "L";
+			number = number - 50;
+		}
+
+		if (number > 39)
+		{
+			RomanValue = RomanValue + "XL";
+			number = number - 40;
+		}
+		
 		while (number > 9)
 		{
 			RomanValue = RomanValue + "X";
