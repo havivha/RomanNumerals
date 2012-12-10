@@ -3,6 +3,11 @@ public class RomanNumerals
 {
 	public String toRoman(int number) 
 	{
+		if ( (number > 3999) || (number < 1) )
+		{
+			return "N/A";
+		}
+		
 		String RomanValue = "";
 		
 		while (number > 999)
