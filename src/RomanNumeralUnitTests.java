@@ -30,5 +30,8 @@ public class RomanNumeralUnitTests
 		
 		assertEquals("CMXCIX", number.toRoman(999));
 		assertEquals("MXXIV", number.toRoman(1024));
+		
+		assertEquals("N/A", number.toRoman(0));
+		assertEquals("N/A", number.toRoman(3500));
 	}
 }
