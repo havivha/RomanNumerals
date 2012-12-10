@@ -9,6 +9,6 @@ public class RomanNumerals
 			RomanValue = RomanValue + "I";
 			number = number - 1;
 		}
-		
+		return RomanValue;
 	}
 }
