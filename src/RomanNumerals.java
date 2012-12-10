@@ -4,6 +4,25 @@ public class RomanNumerals
 	public String toRoman(int number) 
 	{
 		String RomanValue = "";
+		
+		if (number > 399)
+		{
+			RomanValue = RomanValue + "CD";
+			number = number - 400;
+		}
+
+		while (number > 99)
+		{
+			RomanValue = RomanValue + "C";
+			number = number - 100;
+		}
+
+		if (number > 89) 
+		{
+			RomanValue = RomanValue + "XC";
+			number = number - 90;
+		}
+		
 		if (number > 49)
 		{
 			RomanValue = RomanValue + "L";
