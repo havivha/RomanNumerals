@@ -4,6 +4,13 @@ public class RomanNumerals
 	public String toRoman(int number) 
 	{
 		String RomanValue = "";
+		
+		while (number > 999)
+		{
+			RomanValue = RomanValue + "M";	// Concatenate the letters to the right side
+			number = number - 1000;	// Reduce the amount left in number
+		}
+		
 		if (number > 899)
 		{
 			RomanValue = RomanValue + "CM";	// Concatenate letters to the right side
