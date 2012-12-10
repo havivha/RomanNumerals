@@ -4,6 +4,17 @@ public class RomanNumerals
 	public String toRoman(int number) 
 	{
 		String RomanValue = "";
+		if (number > 899)
+		{
+			RomanValue = RomanValue + "CM";	// Concatenate letters to the right side
+			number = number - 900;
+		}
+
+		if (number > 499)
+		{
+			RomanValue = RomanValue + "D";
+			number = number - 500;
+		}
 		
 		if (number > 399)
 		{
